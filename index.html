@@ -8,18 +8,18 @@
     <link rel="stylesheet" href="output.css">
 </head>
 
-<body>
+<body class="scroll-smooth">
     <header class="border-b border-(--border-subtle) fixed inset-x-0 bg-(--navbar-bg) backdrop-blur-xl">
         <nav class="flex justify-between max-w-6xl mx-auto px-6 h-16 items-center ">
             <a href="index.html">ayush<span class="text-amber-400 text-xl">.</span>dev</a>
 
             <ul class="hidden md:flex gap-6 text-sm text-(--text-3)">
                 <li class="hover:text-(--text-1) cursor-pointer transition-all duration-200">Stack</li>
-                <li class="hover:text-(--text-1) cursor-pointer transition-all duration-200">Projects</li>
-                <li class="hover:text-(--text-1) cursor-pointer transition-all duration-200">Experience</li>
-                <li class="hover:text-(--text-1) cursor-pointer transition-all duration-200">Contact</li>
+                <a href="#projects" class="hover:text-(--text-1) cursor-pointer transition-all duration-200">Projects</a>
+                <a href="#experience" class="hover:text-(--text-1) cursor-pointer transition-all duration-200">Experience</a>
+                <a href="#contact" class="hover:text-(--text-1) cursor-pointer transition-all duration-200">Contact</a>
             </ul>
-            <a href=""
+            <a href="blog.html"
                 class="hidden text-sm md:flex items-center gap-2 text-(--accent) border border-(--accent-border) px-4 py-1.5 rounded-full hover:bg-(--accent-dim) hover:border-(--accent) transition-all duration-200">Read
                 Blog <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -79,7 +79,7 @@
 
     <section class="border-t border-(--border) py-20">
 
-        <div class="max-w-6xl mx-auto px-6">
+        <div id="projects" class="max-w-6xl mx-auto px-6">
             <h2 class="uppercase text-sm tracking-widest text-(--text-2)">Tech Stack</h2>
 
 
@@ -293,7 +293,7 @@
 
     </section>
 
-    <section class="border-t border-(--border) py-20">
+    <section id="experience" class="border-t border-(--border) py-20">
         <div class="max-w-6xl mx-auto px-6">
             <p class="text-xs uppercase text-(--text-3) font-semibold tracking-widest">Career</p>
             <p class="font-serif text-2xl pt-3 mb-10">Experience</p>
@@ -418,7 +418,7 @@
         </div>
     </section>
 
-    <section class="border-t border-(--border) py-20">
+    <section id="contact" class="border-t border-(--border) py-20">
 
         <div class="max-w-6xl mx-auto px-6">
             <p class="uppercase tracking-wider text-xs text-(--text-3) font-semibold mb-4">Get In Touch</p>
